@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_technician_certification_form" model="ir.ui.view">
+        <field name="name">technician.certification.form</field>
+        <field name="model">technician.certification</field>
+        <field name="arch" type="xml">
+            <form string="Certification">
+                <sheet>
+                    <group>
+                        <field name="certification_name"/>
+                        <field name="issuing_body"/>
+                        <field name="employee_id"/>
+                        <field name="expiry_date"/>
+                        <field name="is_valid" widget="boolean_toggle"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_technician_certification_tree" model="ir.ui.view">
+        <field name="name">technician.certification.list</field>
+        <field name="model">technician.certification</field>
+        <field name="arch" type="xml">
+            <list string="Certifications">
+                <field name="certification_name"/>
+                <field name="issuing_body"/>
+                <field name="employee_id"/>
+                <field name="expiry_date"/>
+                <field name="is_valid"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="action_technician_certification" model="ir.actions.act_window">
+        <field name="name">Certifications</field>
+        <field name="res_model">technician.certification</field>
+        <field name="view_mode">list,form</field>
+    </record>
+</odoo>

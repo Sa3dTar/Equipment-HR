@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_technician_certification,technician.certification,model_technician_certification,base.group_user,1,1,1,1
+access_equipment_preventive_rule,equipment.preventive.rule,model_equipment_preventive_rule,base.group_user,1,1,1,1
+access_equipment_work_order,equipment.work.order,model_equipment_work_order,base.group_user,1,1,1,1
